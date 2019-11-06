@@ -103,7 +103,7 @@ Wazooly is a mobile application that will track when a child's guardian is there
 ### Networking
   * Log In Screen
     ** (Read/GET) Ask user for Username/password
-    '''
+    ```
     let query = PFQuery(className:"LoginScreen")
     query.whereKey("User1", equalTo: currentUser)
     query.findObjectsInBackground { (username: [PFObject]?, error: Error?) in
@@ -113,10 +113,10 @@ Wazooly is a mobile application that will track when a child's guardian is there
           print("Check!")
       }
     }
-    '''
+    ```
   * Scan/Manually enter License Plate
     ** (READ) Camera Scan or manually input license plate
-    '''
+    ```
     let query = PFQuery(className:"Scanning Screen")
       query.whereKey("User1", equalTo: currentUser)
       query.findObjectsInBackground { (Plate_Number: [PFObject]?, error: Error?) in
@@ -126,7 +126,7 @@ Wazooly is a mobile application that will track when a child's guardian is there
             print("Good to go!")
        }
       }
-      '''
+      ```
   * Validation Screen
     ** (GET) Registered Vehicle/Unregisted Vehicle
 
