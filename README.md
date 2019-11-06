@@ -115,7 +115,7 @@ Wazooly is a mobile application that will track when a child's guardian is there
     }
     ```
   * Scan/Manually enter License Plate
-    ** (READ) Camera Scan or manually input license plate
+    - (READ) Camera Scan or manually input license plate
     ```
     let query = PFQuery(className:"Scanning Screen")
       query.whereKey("User1", equalTo: currentUser)
@@ -128,6 +128,6 @@ Wazooly is a mobile application that will track when a child's guardian is there
       }
       ```
   * Validation Screen
-    ** (GET) Registered Vehicle/Unregisted Vehicle
+    - (GET) Registered Vehicle/Unregisted Vehicle
 
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
