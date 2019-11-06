@@ -102,7 +102,7 @@ Wazooly is a mobile application that will track when a child's guardian is there
 
 ### Networking
   * Log In Screen
-    ** (Read/GET) Ask user for Username/password
+    - (Read/GET) Ask user for Username/password
     ```
     let query = PFQuery(className:"LoginScreen")
     query.whereKey("User1", equalTo: currentUser)
