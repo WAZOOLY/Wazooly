@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/Done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="160dp"
+        android:layout_marginRight="160dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/Done"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/VehicleTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Tag Number"
+        android:inputType="textAutoComplete"
+        android:text="@string/Vehicle_Tag"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TagState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textAutoComplete"
+        android:text="@string/Vehicle_State"
+        android:textAlignment="center"
+
+        app:layout_constraintEnd_toEndOf="@+id/VehicleTag"
+        app:layout_constraintTop_toBottomOf="@+id/VehicleTag" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

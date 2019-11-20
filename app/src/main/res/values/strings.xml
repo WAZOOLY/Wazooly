@@ -6,4 +6,13 @@
     <string name="Username">Username</string>
     <string name="Password">Password</string>
     <string name="Login">Login</string>
+    <string name="Vehicle_Error">Unable To Find Vehicle</string>
+    <string name="Done">Done</string>
+    <string name="Back">Back</string>
+    <string name="Vehicle_Tag">Vehicle Tag</string>
+    <string name="Manual_Input">Manual Input</string>
+    <string name="Vehicle_State">Vehicle State</string>
+    <string name="Camera">Camera</string>
+    <string name="Input_Manually">Input Manually</string>
+    <string name="Vehicle_Successfully_Added">Vehicle Successfully Added!</string>
 </resources>
