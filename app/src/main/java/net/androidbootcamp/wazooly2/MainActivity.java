@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Validate Login Credentials
     private void login() {
-        Button button = findViewById(R.id.take_picture);
+        Button button = findViewById(R.id.loginbutton);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
