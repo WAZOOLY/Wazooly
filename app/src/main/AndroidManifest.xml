@@ -37,6 +37,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Scan_Pickup_Activity" />
         </activity>
+
+        <activity
+            android:name=".Pickup_Activity"
+            android:parentActivityName=".Scan_Vehicle_Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Scan_Vehicle_Activity" />
+        </activity>
     </application>
 
 </manifest>

@@ -31,7 +31,7 @@ public class Scan_Pickup_Activity extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent activity_to_view = new Intent(getApplicationContext(), Scan_Vehicle_Activity.class);
+                Intent activity_to_view = new Intent(getApplicationContext(), Pickup_Activity.class);
                 startActivity(activity_to_view);
             }
         });
