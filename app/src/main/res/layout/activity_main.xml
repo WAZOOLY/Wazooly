@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/wazoolylogopic" />
 
-    <TextView
+    <EditText
         android:id="@+id/Username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -38,12 +38,12 @@
         android:textColor="#868686"
         app:layout_constraintBottom_toTopOf="@+id/passwordEntry"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.896"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Wazoolylogo"
-        app:layout_constraintVertical_bias="0.55" />
+        app:layout_constraintVertical_bias="0.578" />
 
-    <TextView
+    <EditText
         android:id="@+id/passwordEntry"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
