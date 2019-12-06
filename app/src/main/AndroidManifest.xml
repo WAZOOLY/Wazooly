@@ -2,7 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="net.androidbootcamp.wazooly2">
 
-    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission-sdk-23 android:name="android.permission.CAMERA" />
+    <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
@@ -40,11 +43,29 @@
 
         <activity
             android:name=".Pickup_Activity"
+            android:parentActivityName=".Scan_Pickup_Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Scan_Pickup_Activity" />
+        </activity>
+
+        <activity
+            android:name=".Validate_Vehicle_Activity"
             android:parentActivityName=".Scan_Vehicle_Activity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Scan_Vehicle_Activity" />
         </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="androiddeft.com.accesscamera"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
     </application>
 
 </manifest>

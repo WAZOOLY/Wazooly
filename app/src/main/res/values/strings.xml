@@ -16,4 +16,5 @@
     <string name="Input_Manually">Input Manually</string>
     <string name="Vehicle_Successfully_Added">Vehicle Successfully Added!</string>
     <string name="Take_Picture">Take Picture</string>
+    <string name="permission_text">This app needs access to your camera so that it can take pictures.</string>
 </resources>
