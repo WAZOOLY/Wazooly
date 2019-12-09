@@ -57,6 +57,30 @@
                 android:value=".Scan_Vehicle_Activity" />
         </activity>
 
+        <activity
+            android:name=".Positive_Scan_Activity"
+            android:parentActivityName=".Validate_Vehicle_Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Validate_Vehicle_Activity" />
+        </activity>
+
+        <activity
+            android:name=".Bad_Scan_Activity"
+            android:parentActivityName=".Validate_Vehicle_Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Validate_Vehicle_Activity" />
+        </activity>
+
+        <activity
+            android:name=".student_info_for_pickup"
+            android:parentActivityName=".Pickup_Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Pickup_Activity" />
+        </activity>
+
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="androiddeft.com.accesscamera"

@@ -8,26 +8,46 @@
 
     <Button
         android:id="@+id/Scanbutton"
-        android:layout_width="206dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="234dp"
-        android:layout_marginBottom="91dp"
-        android:text="@string/Scan"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="414dp"
+        android:layout_height="208dp"
+        android:background="#002FBA2F"
+        android:text="@string/SCAN"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#5E4632"
+        android:textSize="36sp"
         app:layout_constraintBottom_toTopOf="@+id/pickupbutton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/pickupbutton"
-        android:layout_width="206dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="208dp"
-        android:text="@string/Pickup"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="412dp"
+        android:layout_height="214dp"
+        android:layout_marginBottom="44dp"
+        android:background="#002FBA2F"
+        android:text="@string/PICKUP"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#5E4632"
+        android:textSize="36sp"
+        app:layout_constrainedWidth="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="415dp"
+        android:layout_height="137dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.342"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Scanbutton" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wazoolylogopic" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

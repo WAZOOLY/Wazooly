@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20px">
+
+    <TextView
+        android:id="@+id/pickup_vehicle_tag_number"
+        android:layout_width="396dp"
+        android:layout_height="127dp"
+        android:layout_weight="1"
+        android:textAllCaps="true"
+        android:textColor="#095E20"
+        android:textSize="36sp" />
+</LinearLayout>

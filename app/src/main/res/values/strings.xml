@@ -6,8 +6,8 @@
     <string name="Username">Username</string>
     <string name="Password">Password</string>
     <string name="Login">Login</string>
-    <string name="Vehicle_Error">Unable To Find Vehicle</string>
-    <string name="Done">Done</string>
+    <string name="Vehicle_Error">Unable To Find Vehicle!</string>
+    <string name="Done">DONE</string>
     <string name="Back">Back</string>
     <string name="Vehicle_Tag">Vehicle Tag</string>
     <string name="Manual_Input">Manual Input</string>
@@ -17,4 +17,8 @@
     <string name="Vehicle_Successfully_Added">Vehicle Successfully Added!</string>
     <string name="Take_Picture">Take Picture</string>
     <string name="permission_text">This app needs access to your camera so that it can take pictures.</string>
+    <string name="SCAN">SCAN</string>
+    <string name="PICKUP">PICKUP</string>
+    <string name="TAKE_PICTURE">TAKE PICTURE</string>
+    <string name="LOGIN">LOGIN</string>
 </resources>

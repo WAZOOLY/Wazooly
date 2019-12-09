@@ -1,48 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <EditText
         android:id="@+id/plateNum"
-        android:layout_width="376dp"
-        android:layout_height="40dp"
+        android:layout_width="356dp"
+
+        android:layout_height="49dp"
+        android:layout_marginTop="206dp"
+
         android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#5E4632"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-
+        app:layout_constraintHorizontal_bias="0.29"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="parent"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="305dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.151" />
 
     <EditText
         android:id="@+id/plateState"
-        android:layout_width="376dp"
-        android:layout_height="40dp"
+        android:layout_width="360dp"
+        android:layout_height="53dp"
         android:text="TextView"
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#5E4632"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-
+        app:layout_constraintHorizontal_bias="0.313"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/plateNum"
-        tools:layout_editor_absoluteX="17dp"
-        tools:layout_editor_absoluteY="363dp" />
+        app:layout_constraintVertical_bias="0.418" />
 
     <Button
         android:id="@+id/okButton"
-        android:layout_width="146dp"
-        android:layout_height="63dp"
-        android:text="Ok"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="257dp"
+        android:layout_height="77dp"
+        android:background="#002FBA2F"
+        android:text="OK"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#095E20"
+        android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/plateState"
-        tools:layout_editor_absoluteX="115dp"
-        tools:layout_editor_absoluteY="447dp" />
+        app:layout_constraintVertical_bias="0.502" />
+
+    <TextView
+        android:id="@+id/TagNumberText"
+        android:layout_width="245dp"
+        android:layout_height="51dp"
+        android:text="Vehicle Tag Number:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#095E20"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/plateNum"
+        app:layout_constraintStart_toStartOf="@+id/plateNum" />
+
+    <TextView
+        android:id="@+id/tagStateText"
+        android:layout_width="245dp"
+        android:layout_height="51dp"
+        android:text="Vehicle Tag State:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#095E20"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/plateState"
+        app:layout_constraintStart_toStartOf="@+id/plateState" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wazoolylogopic" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
