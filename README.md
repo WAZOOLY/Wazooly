@@ -79,7 +79,7 @@ Wazooly is a mobile application that will track when a child's guardian is there
 <img src="Webp.net-resizeimage.png" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
-<img src="C:\Users\Wilso\AndroidStudioProjects\Wazooly2\app\src\main\res\drawable-v24\Wazooly.png" width=600>
+<img src="Wazooly.png">
 
 ### [BONUS] Interactive Prototype
 
