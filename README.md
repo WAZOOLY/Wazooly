@@ -28,12 +28,12 @@ Wazooly is a mobile application that will track when a child's guardian is there
 
 **Required Must-have Stories**
 
-* User1/User2 (Chaperone 1/Chaperone 2) opens application and enters log in credentials.
-* User1 (Chaperone1) will see a camera on the screen, prepping for the picture of the license plate.
-* (Backend) The picture would then be sent to the backend through ComputerVision, for the letters/numbers to be deciphered.
-* If the license plate is found in the database, the User1 (Chaperone 1 ) will be sent to a screen with a green check mark, if not they will be shown a red X. If there is an error reading/deciphering the license plate number, an error message will prompt Chaperone1 to manually enter the license plate number.
-* User2 (Chaperone 2) will see a queue of the childrens' information associated with the guardian and license plate number previously scanned, the details of the car, and a picture of the driver.
-* Once the car has taken the child, User 2 (Chaperone 2) will check the column and dequeue the item in the list.
+# [checkbox:checked] User1/User2 (Chaperone 1/Chaperone 2) opens application and enters log in credentials.
+# [checkbox:checked] User1 (Chaperone1) will see a camera on the screen, prepping for the picture of the license plate.
+# [checkbox:checked] (Backend) The picture would then be sent to the backend through ComputerVision, for the letters/numbers to be deciphered.
+# [checkbox:checked] If the license plate is found in the database, the User1 (Chaperone 1 ) will be sent to a screen with a green check mark, if not they will be shown a red X. If there is an error reading/deciphering the license plate number, an error message will prompt Chaperone1 to manually enter the license plate number.
+# [checkbox:checked] User2 (Chaperone 2) will see a queue of the childrens' information associated with the guardian and license plate number previously scanned, the details of the car, and a picture of the driver.
+# [checkbox:checked] Once the car has taken the child, User 2 (Chaperone 2) will check the column and dequeue the item in the list.
 
 **Optional Nice-to-have Stories**
 * The ability for guardians to be added on the fly for emergencies.
@@ -76,7 +76,7 @@ Wazooly is a mobile application that will track when a child's guardian is there
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="Webp.net-resizeimage.png" width=600>
+<img src="https://github.com/WAZOOLY/Wazooly/blob/master/webpnetresizeimage.png">
 
 ### [BONUS] Digital Wireframes & Mockups
 <img src="https://github.com/WAZOOLY/Wazooly/blob/master/wazooly.png">
