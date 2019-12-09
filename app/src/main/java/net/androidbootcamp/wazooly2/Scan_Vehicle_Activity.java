@@ -3,8 +3,6 @@ package net.androidbootcamp.wazooly2;
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -13,7 +11,6 @@ import android.provider.MediaStore;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 
 import java.io.File;
 import java.io.IOException;
@@ -31,10 +28,19 @@ public class Scan_Vehicle_Activity extends AppCompatActivity {
     private static final int CAMERA_REQUEST_CODE = 1450;
     private static final int CAMERA_PERMISSION_CODE = 1460;
     public static String mCurrentPhotoPath;
+
+    private static String plateState = "";
+
+    public static void setPlateNumber(String plateNumber) {
+        Scan_Vehicle_Activity.plateNumber = plateNumber;
+    }
+
     private static String plateNumber;
-    private static String plateState;
+
+    public static void setPlateState(String plateState) {
+        Scan_Vehicle_Activity.plateState = plateState;
+    }
     private Button takePictureButton;
-    private ImageView imageView;
 
     public static String getPlateNumber() {
         return plateNumber;
@@ -50,7 +56,6 @@ public class Scan_Vehicle_Activity extends AppCompatActivity {
         setContentView(R.layout.scanvehicle);
 
         takePictureButton = findViewById(R.id.take_picture);
-        imageView = findViewById(R.id.Camera);
 
         takePictureButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -88,19 +93,10 @@ public class Scan_Vehicle_Activity extends AppCompatActivity {
 
     @SuppressLint("MissingSuperCall")
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        //Preview the image captured by the camera
-        if (requestCode == CAMERA_REQUEST_CODE) {
-            BitmapFactory.Options bmOptions = new BitmapFactory.Options();
-            bmOptions.inSampleSize = 4;
-            Bitmap bitmap = BitmapFactory.decodeFile(mCurrentPhotoPath, bmOptions);
-            imageView.setImageBitmap(bitmap);
-        }
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             connectToOpenALPR testTask = new connectToOpenALPR();
             testTask.execute();
 
-            plateNumber = "XYHKLF";
-            plateState = "FL";
             Intent activity_to_view = new Intent(getApplicationContext(), Validate_Vehicle_Activity.class);
             startActivity(activity_to_view);
         }

@@ -67,6 +67,7 @@ public class connectToOpenALPR extends AsyncTask<Void, Void, Void> {
                     json_content += inputLine;
                 in.close();
 
+                Scan_Vehicle_Activity.setPlateNumber(json_content);
                 System.out.println(json_content);
             } else {
                 System.out.println("Got non-200 response: " + status_code);
